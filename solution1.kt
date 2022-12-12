@@ -1,3 +1,6 @@
+//input in separate file
+
+
 val lines = input.split("\n")
 
 var currentIndex = 0
@@ -18,6 +21,11 @@ fun main() {
         elves.add(calories)//add the sum of calories
     }
     
+    //part1
     println(elves.maxOrNull())
+    
+    //part2
+    elves.sort()
+    println(elves.takeLast(3).sum())
     
 }
